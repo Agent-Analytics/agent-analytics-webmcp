@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ask an AI agent to explore real product analytics through WebMCP, while you watch the evidence change on the page.">
+    <title>Agent Analytics — WebMCP Evidence Explorer</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Agent Analytics WebMCP home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>Agent Analytics</span>
+      </a>
+      <div class="top-actions">
+        <span class="live-chip"><span class="live-dot"></span>Public demo · live API</span>
+        <span class="tool-chip" id="tool-status">Detecting site tools…</span>
+        <a class="github-link" href="https://github.com/Agent-Analytics/agent-analytics-webmcp">Source ↗</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span>WebMCP Challenge</span><span class="rule"></span><span>Evidence, not guesswork</span></div>
+        <h1>Ask your browser<br>what users did <em>next.</em></h1>
+        <p class="lede">Five read-only site tools let Codex or ChatGPT Work investigate real product data. The agent gets structured evidence. You see every answer take shape here.</p>
+        <div class="hero-actions">
+          <button class="primary" data-demo="overview">Explore 30-day evidence</button>
+          <a class="secondary" href="#try-it">How to try it <span>↓</span></a>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Analytics evidence explorer">
+        <aside class="question-rail">
+          <div class="rail-heading">
+            <span class="rail-label">Ask the agent</span>
+            <span class="pulse-ring" aria-hidden="true"></span>
+          </div>
+          <button class="question active" data-demo="overview">
+            <span class="question-num">01</span>
+            <span><strong>What changed?</strong><small>30-day growth overview</small></span>
+            <span class="arrow">↗</span>
+          </button>
+          <button class="question" data-demo="funnel">
+            <span class="question-num">02</span>
+            <span><strong>Where do users drop?</strong><small>Signup funnel</small></span>
+            <span class="arrow">↗</span>
+          </button>
+          <button class="question" data-demo="paths">
+            <span class="question-num">03</span>
+            <span><strong>Which journey wins?</strong><small>Paths to signup</small></span>
+            <span class="arrow">↗</span>
+          </button>
+          <button class="question" data-demo="breakdown">
+            <span class="question-num">04</span>
+            <span><strong>What should we fix?</strong><small>Conversions by page</small></span>
+            <span class="arrow">↗</span>
+          </button>
+          <button class="question" data-demo="experiment">
+            <span class="question-num">05</span>
+            <span><strong>Did the test work?</strong><small>CTA experiment</small></span>
+            <span class="arrow">↗</span>
+          </button>
+          <div class="rail-foot">
+            <span>Read-only by design</span>
+            <span>No account required</span>
+          </div>
+        </aside>
+
+        <article class="evidence-panel" aria-live="polite" aria-busy="false">
+          <div class="panel-head">
+            <div>
+              <span class="kicker" id="view-kicker">GROWTH OVERVIEW</span>
+              <h2 id="view-title">Thirty days of product evidence</h2>
+            </div>
+            <div class="freshness"><span></span><span id="freshness">Loading live data…</span></div>
+          </div>
+          <div id="evidence-content" class="evidence-content">
+            <div class="loading-state"><span class="spinner"></span>Querying Agent Analytics…</div>
+          </div>
+          <div class="agent-call" id="agent-call">
+            <span class="terminal-prompt">›</span>
+            <span id="call-text">show_growth_overview({ days: 30 })</span>
+            <span class="call-state">READY</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="how" id="try-it">
+        <div>
+          <span class="section-index">01 / TRY IT</span>
+          <h2>The page becomes<br>the agent’s interface.</h2>
+        </div>
+        <ol>
+          <li><span>1</span><p>Open this page in the ChatGPT or Codex built-in browser.</p></li>
+          <li><span>2</span><p>Ask: “Find the biggest signup leak and show me the evidence.”</p></li>
+          <li><span>3</span><p>Watch the agent call site tools while the same result appears above.</p></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <span>Built by Agent Analytics for the OpenAI WebMCP Challenge.</span>
+      <a href="https://agentanalytics.sh">agentanalytics.sh ↗</a>
+    </footer>
+  </body>
+</html>
