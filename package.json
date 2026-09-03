@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "A WebMCP evidence explorer for the OpenAI WebMCP Challenge.",
+  "description": "A public, read-only WebMCP evidence explorer for Agent Analytics.",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",

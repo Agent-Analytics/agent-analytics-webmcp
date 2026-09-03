@@ -1,8 +1,10 @@
 # Agent Analytics WebMCP Evidence Explorer
 
-An open-source WebMCP demo for the [OpenAI WebMCP Challenge](https://openai.com/webmcp-challenge/). It turns a live product-analytics page into an agent-native evidence surface: Codex or ChatGPT Work can call five read-only tools, receive structured analytics, and update the same visual canvas the person is watching.
+An open-source WebMCP support preview for Agent Analytics. It turns a live product-analytics page into an agent-native evidence surface: Codex or ChatGPT Work can call five read-only tools, receive structured analytics, and update the same visual canvas the person is watching.
 
 **Live demo:** [agent-analytics-webmcp.dannyshmueli.workers.dev](https://agent-analytics-webmcp.dannyshmueli.workers.dev/)
+
+**How to use it:** [Agent Analytics WebMCP guide](https://docs.agentanalytics.sh/guides/webmcp/)
 
 ## Why this exists
 
@@ -36,7 +38,7 @@ npm run dev
 
 Open the local URL and use the manual controls. WebMCP tools are feature-detected, so the page remains fully usable in ordinary browsers.
 
-To test native site tools, open the URL in the ChatGPT or Codex built-in browser with WebMCP enabled and ask: **“Find the biggest signup leak and show me the evidence.”**
+To test native site tools, open the URL in the ChatGPT or Codex built-in browser with WebMCP enabled and ask: **“Find the biggest signup leak and show me the evidence.”** The agent can call the page's structured tools; the same result appears in the visible evidence canvas.
 
 ## Deploy
 
