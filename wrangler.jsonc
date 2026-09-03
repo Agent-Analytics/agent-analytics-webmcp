@@ -4,6 +4,9 @@
   "main": "src/worker.js",
   "compatibility_date": "2026-09-03",
   "observability": { "enabled": true },
+  "routes": [
+    { "pattern": "webmcp.agentanalytics.sh", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",

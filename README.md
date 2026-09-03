@@ -2,7 +2,7 @@
 
 An open-source WebMCP support preview for Agent Analytics. It turns a live product-analytics page into an agent-native evidence surface: Codex or ChatGPT Work can call five read-only tools, receive structured analytics, and update the same visual canvas the person is watching.
 
-**Live demo:** [agent-analytics-webmcp.dannyshmueli.workers.dev](https://agent-analytics-webmcp.dannyshmueli.workers.dev/)
+**Live demo:** [webmcp.agentanalytics.sh](https://webmcp.agentanalytics.sh/)
 
 **How to use it:** [Agent Analytics WebMCP guide](https://docs.agentanalytics.sh/guides/webmcp/)
 
